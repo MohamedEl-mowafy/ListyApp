@@ -13,6 +13,8 @@
 		4B5D14CB2638C971004AF337 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B5D14C92638C971004AF337 /* Main.storyboard */; };
 		4B5D14CD2638C973004AF337 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B5D14CC2638C973004AF337 /* Assets.xcassets */; };
 		4B5D14D02638C973004AF337 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B5D14CE2638C973004AF337 /* LaunchScreen.storyboard */; };
+		4B5D14DD2638DDEA004AF337 /* ParallaxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5D14DC2638DDEA004AF337 /* ParallaxCell.swift */; };
+		4B5D14E32638E4C3004AF337 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5D14E22638E4C3004AF337 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		4B5D14CC2638C973004AF337 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B5D14CF2638C973004AF337 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B5D14D12638C973004AF337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B5D14DC2638DDEA004AF337 /* ParallaxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxCell.swift; sourceTree = "<group>"; };
+		4B5D14E22638E4C3004AF337 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		4B5D14C22638C971004AF337 /* CoreMotion */ = {
 			isa = PBXGroup;
 			children = (
+				4B5D14E12638E4B1004AF337 /* Model */,
+				4B5D14DB2638DDC2004AF337 /* View */,
+				4B5D14DA2638DDB3004AF337 /* Controller */,
 				4B5D14C32638C971004AF337 /* AppDelegate.swift */,
 				4B5D14C52638C971004AF337 /* SceneDelegate.swift */,
-				4B5D14C72638C971004AF337 /* MainVC.swift */,
 				4B5D14C92638C971004AF337 /* Main.storyboard */,
 				4B5D14CC2638C973004AF337 /* Assets.xcassets */,
 				4B5D14CE2638C973004AF337 /* LaunchScreen.storyboard */,
 				4B5D14D12638C973004AF337 /* Info.plist */,
 			);
 			path = CoreMotion;
+			sourceTree = "<group>";
+		};
+		4B5D14DA2638DDB3004AF337 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4B5D14C72638C971004AF337 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4B5D14DB2638DDC2004AF337 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B5D14DC2638DDEA004AF337 /* ParallaxCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4B5D14E12638E4B1004AF337 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B5D14E22638E4C3004AF337 /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B5D14E32638E4C3004AF337 /* Model.swift in Sources */,
 				4B5D14C82638C971004AF337 /* MainVC.swift in Sources */,
 				4B5D14C42638C971004AF337 /* AppDelegate.swift in Sources */,
+				4B5D14DD2638DDEA004AF337 /* ParallaxCell.swift in Sources */,
 				4B5D14C62638C971004AF337 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
